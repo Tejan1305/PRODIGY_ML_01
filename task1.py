@@ -7,7 +7,7 @@ from sklearn.model_selection import cross_val_score
 import numpy as np
 
 # Load your training dataset
-train_file_path = '/content/train.csv'  # Update this path
+train_file_path = 'add your train dataset here'  # Update this path
 train_df = pd.read_csv(train_file_path)
 
 # One-Hot Encoding for categorical features
@@ -65,7 +65,7 @@ print(f"Cross-Validated MAE: {-np.mean(cv_scores):,.2f}")
 model.fit(X_train_scaled, y_train)
 
 # Load your test dataset
-test_file_path = '/content/test.csv'  # Update this path
+test_file_path = 'add your test dataset here'  # Update this path
 test_df = pd.read_csv(test_file_path)
 
 # One-hot encode categorical features for the test dataset
